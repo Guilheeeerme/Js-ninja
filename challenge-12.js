@@ -1,0 +1,76 @@
+// Envolva todo o conteúdo desse arquivo em uma IIFE.
+(function(){
+
+    const person = {
+        name: 'Guilherme',
+        lastname: 'Moura',
+        age: 22
+    }
+
+/*
+Mostre no console, em um array, todas as propriedades do objeto acima.
+Não use nenhuma estrutura de repetição, nem crie o array manualmente.
+*/
+    console.log('Propriedade de person', Object.keys(person));
+
+/*
+Crie um array vazio chamado `books`.
+*/
+    let books = [];
+
+/*
+Adicione nesse array 3 objetos, que serão 3 livros. Cada livro deve ter a
+seguintes propriedades:
+`name`: String
+`pages`: Number
+*/
+    books.push({name: 'Eloquent JavaScript', pages: 300 });
+    books.push({name: 'JavaScript: O Guia Definitivo', pages: 400 });
+    books.push({name: 'Professional JavaScript for Web Developers', pages: 200 });
+
+// Mostre no console todos os livros.
+    console.log(books);
+
+// Remova o último livro, e mostre-o no console.
+    console.log('Livro que está sendo removido', books.pop());
+
+// Mostre no console os livros restantes.
+    console.log('Agora sobraram somente os livros:', books);
+
+// Converta os objetos que ficaram em `books` para strings.
+    books = JSON.stringify(books);
+
+// Mostre os livros nesse formato no console:
+    console.log(books);
+
+// Converta os livros novamente para objeto.
+    books = JSON.parse(books)
+    console.log('Agora os livros são objetos novamente:', books);
+
+/*
+Mostre no console todas as propriedades e valores de todos os livros,
+no formato abaixo:
+    "[PROPRIEDADE]: [VALOR]"
+*/
+    for(i = 0; i < books.length; i++){
+        for(prop in books[i]){
+            console.log(`${prop}: ${books[i][prop]}`)
+        }
+    }
+
+/*
+Crie um array chamado `myName`. Cada item desse array deve ser uma letra do
+seu nome. Adicione seu nome completo no array.
+*/
+    const myName = ['g','u','i','l','h','e','r','m','e'];
+
+// Juntando todos os itens do array, mostre no console seu nome.
+    console.log('Meu nome é', myName.join(''));
+
+// Ainda usando o objeto acima, mostre no console seu nome invertido.
+    console.log('Meu nome invertido é', myName.reverse().join(''));
+
+// Mostre todos os itens do array acima, odenados alfabéticamente.
+    console.log('Agora em ordem alfabética:', myName.sort().join(''));
+
+});
