@@ -3,6 +3,7 @@
 2. Adicione a diretiva 'use strict';
 3. Crie um arquivo index.html e adicione esse script à ele.
 */
+(function(){
 
 /*
 Crie uma função chamada `cleanCPF`, que receba um CPF por parâmetro, e
@@ -117,3 +118,5 @@ corretas, para depois aplicar no código ;)
     const tagText = '<h1>Título da página</h1><p>Este é um parágrafo</p><footer>Rodapé</footer>';
 
     console.log(tagText.replace( /<(\w+)>([^<]+)<\/\w+>/g, `<$1>O texto dentro da tag '$1' é '$2'</$1>\n`));
+    
+}();)
