@@ -119,4 +119,4 @@ corretas, para depois aplicar no código ;)
 
     console.log(tagText.replace( /<(\w+)>([^<]+)<\/\w+>/g, `<$1>O texto dentro da tag '$1' é '$2'</$1>\n`));
     
-}();)
+})();
