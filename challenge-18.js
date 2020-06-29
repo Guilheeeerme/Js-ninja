@@ -5,6 +5,7 @@
 */
 (function(){
 
+    'use strict'
 /*
 Crie uma função chamada `cleanCPF`, que receba um CPF por parâmetro, e
 retorne esse CPF limpo (somente os números).
