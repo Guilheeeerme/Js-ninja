@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <input data-js="inputNumber" type="text" value="0" readonly>
+
+    <div class="buttons-numbers">
+        <button data-js="buttonNumbers" data-id="number0" type="button">0</button>
+        <button data-js="buttonNumbers" data-id="number1" type="button">1</button>
+        <button data-js="buttonNumbers" data-id="number2" type="button">2</button>
+        <button data-js="buttonNumbers" data-id="number3" type="button">3</button>
+        <button data-js="buttonNumbers" data-id="number4" type="button">4</button>
+        <button data-js="buttonNumbers" data-id="number5" type="button">5</button>
+        <button data-js="buttonNumbers" data-id="number6" type="button">6</button>
+        <button data-js="buttonNumbers" data-id="number7" type="button">7</button>
+        <button data-js="buttonNumbers" data-id="number8" type="button">8</button>
+        <button data-js="buttonNumbers" data-id="number9" type="button">9</button>
+    </div>
+
+    <div class="operations">
+        <button data-js="buttonOperations" value="+" type="button">+</button>
+        <button data-js="buttonOperations" value="-" type="button">-</button>
+        <button data-js="buttonOperations" value="x" type="button">*</button>
+        <button data-js="buttonOperations" value="÷" type="button">/</button>
+        <button data-js="buttonEqual"      value="=" type="button">=</button>
+        <button data-js="buttonCE"         value=""  type="button">CE</button> <!-- Clear Input, to value 0 -->
+    </div>
+
+    <script src="challenge-23.js"></script>
+
+</body>
+</html>
